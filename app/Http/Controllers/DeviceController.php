@@ -31,7 +31,6 @@ class DeviceController extends Controller
             'devices' => $this->deviceSer->searchDevices($request), 
             'types' => $this->deviceSer->getAll(new Type()),        
         ]);
-        return view('devices.device');
         
     }
     

@@ -9,12 +9,12 @@ class AppConst extends Model
 {
     use HasFactory;
 
-    const USER_ID = 2;
-    const RELATED_DEVICE = 3;
-    const DEVICE_PER_PAGE = 4;
-    const DEVICE_PER_ADMIN_PAGE = 10;
+    public const USER_ID = 2;
+    public const RELATED_DEVICE = 3;
+    public const DEVICE_PER_PAGE = 4;
+    public const DEVICE_PER_ADMIN_PAGE = 10;
     
-    const USER = 'user';
-    const SUPPERVISOR = 'admin';
-    const MY_MAIL = 'dinhnguyenkhanh210401@gmail.com';
+    public const USER = 'user';
+    public const SUPPERVISOR = 'admin';
+    public const MY_MAIL = 'dinhnguyenkhanh210401@gmail.com';
 }

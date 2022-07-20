@@ -9,9 +9,9 @@ class Status extends Model
 {
     use HasFactory;
 
-    const OPEN = 'open';
-    const LENT = 'lent';
-    const PENDING = 'pending';
+    public const OPEN = 'open';
+    public const LENT = 'lent';
+    public const PENDING = 'pending';
 
     public function devices () {
         return $this->hasMany(Device::class);

@@ -7,14 +7,14 @@ use App\Http\Requests\MailRequest;
 
 class ContactController extends Controller
 {
-    function index () {
+    public function index () {
         return view('contact');
     }
 
     /**
      * send email
      */
-    function store(MailRequest $request) {
+    public function store(MailRequest $request) {
         UserContacted::dispatch($request);
         return redirect(route('contact.index'))->with('status', __('mail.send.success'));
     }
